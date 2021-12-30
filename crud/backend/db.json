@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "name": "Xiami Redmi Note 8 Pro 6Gb 128Gb",
+      "price": "1334",
+      "id": 1
+    },
+    {
+      "name": "Xiaomi Redmi 9A Cinza 2Gb 32Gb",
+      "price": "899",
+      "id": 2
+    },
+    {
+      "name": "Dell Inspiron 15 8Gb SSD 256Gb MX350 2Gb",
+      "price": "5249",
+      "id": 3
+    }
+  ]
+}

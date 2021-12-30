@@ -1,0 +1,29 @@
+<!--
+binding de atributo
+<p [id]="atributoLegal">product-create works!</p>
+binding de evento
+<button (click)="fazerAlgo()">Fazer Algo</button>
+-->
+<mat-card>
+    <mat-card-title>Novo Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <!--
+                [(ngModel)] faz o two way data binding, 
+                o valor pode ser modificado tanto no input 
+                quanto no campo que será alterado em ambos-->
+            <input matInput placeholder="Nome" 
+                [(ngModel)]= "product.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)"
+                [(ngModel)]= product.price name="price">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click) = "createProduct()" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click) = "cancel()">
+        Cancelar
+    </button>
+</mat-card>
